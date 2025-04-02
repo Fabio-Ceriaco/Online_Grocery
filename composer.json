@@ -1,0 +1,22 @@
+{
+  "name": "fabioceriaco/phpstore",
+  "description": "Loja online",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Fabio Ceriaco"
+    }
+  ],
+  "require": {
+    "phpmailer/phpmailer": "^6.9",
+    "mpdf/mpdf": "^8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "core\\": "core/"
+    },
+    "files": [
+      "config.php"
+    ]
+  }
+}

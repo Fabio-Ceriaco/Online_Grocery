@@ -1,0 +1,10 @@
+adicionar o PHPMailer ao projeto 
+permite enviar emails a partir do PHP
+        para enviar o email > conta de email real 
+        criar uma conta no gmail + configurar conta para enviar os emails 
+        
+        email : merceariaonline90@gmail.com 
+        pass_app: tryxgztfuubwobtv
+
+
+

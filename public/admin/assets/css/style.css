@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #4eb060;
+  --secondary-color: #5ccf71;
+  --dark-font-color: #202020;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /*box-shadow: inset 0 0 2px rgba(255, 0, 0, 1);*/
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #202020;
+  text-decoration: none;
+}
+
+.logo span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-success {
+  border-radius: 10px;
+  background-color: var(--primary-color) !important;
+  transition: all ease 0.3s;
+}
+.btn-success:hover {
+  background-color: var(--secondary-color) !important;
+  color: #fff;
+  transition: all ease 0.3s;
+}
+
+.status-click {
+  cursor: pointer;
+}
+
+button.page-link {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+button.page-link:hover {
+  background-color: var(--secondary-color) !important;
+}
+.active {
+  background-color: var(--primary-color) !important;
+}

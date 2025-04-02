@@ -1,0 +1,123 @@
+//================================================================
+
+Tabela Produtos
+
+id_produto 
+id_categoria 
+nome_produto 
+descricao 
+imagem 
+preco 
+stock 
+visivel 
+created_at 
+updated_at 
+deleted_at 
+
+
+
+//================================================================
+
+Tabela Clientes
+
+id_cliente
+username 
+email 
+password 
+nome_completo 
+morada 
+localidade 
+cod_postal 
+telefone 
+data_nascimento 
+nif 
+purl  
+ativo 
+created_at 
+updated_at 
+deleted_at 
+
+
+//================================================================
+
+Tabela Categorias
+
+id_categoria
+nome_cetgoria
+
+//================================================================
+
+Tabela Encomendas
+
+id_encomenda 
+id_cliente 
+data_encomenda 
+morada 
+localidade 
+cod_postal 
+email
+telefone 
+codigo_encomenda 
+status 
+mensagem 
+created_at 
+updated_at 
+
+//================================================================
+
+Tabela Encomenda Produto
+
+id_encomenda_produto 
+id_encomenda 
+designacao_produto 
+preco_uinidade 
+quantidade 
+created_at 
+/------------------------------------------------------
+    STATUS
+
+    PENDENTE - encomenda acabada de registar
+    PAGO - encomenda foi paga
+    EM TRATAMENTO - está a ser processada pela loja
+    ENVIADA - foi enviada por correio
+    CANCELADA 
+    ENTREGUE - completamente finalizada
+
+/----------------------------------------------------
+
+
+//================================================================
+
+Tabela de Administradores
+
+id_admin 
+email 
+password 
+created_at 
+updated_at 
+deleted_at 
+
+//================================================================
+
+Array com premissões pdf
+
+// definir premissões e proteção
+        $premissions = [
+            //'copy',
+            // 'print',
+            // 'modify',
+            //'annot-forms',
+            //'fill-forms',
+            //'extract',
+            //'assemble',
+            //'print-highres',
+        ];
+
+
+//================================================================
+
+
+
+
+
+?q=pagamento&codigo=<?= Store::aesEncriptar($dados_encomenda->codigo_encomenda) 
